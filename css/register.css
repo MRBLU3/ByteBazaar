@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url(../images/homg-img.png) no-repeat;
+  background-size: cover;
+}
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modalClose {
+  background-color: #2691d9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#modalClose:hover {
+  background-color: #5abdff;
+}
+
+/* Container styling */
+div.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 50px 50px -50px darkslategray;
+  width: 90%;
+  max-width: 510px; /* Limit the max width */
+  max-height: 99vh; /* Set a max height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+/* Form styling */
+div.container div.myform {
+  width: 100%;
+  padding-bottom: 0;
+}
+
+div.container div.myform h2 {
+  color: #2691d9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 24px; /* Increased font size for better visibility */
+  font-weight: 700; /* Make the text bold */
+  text-align: center;
+  background: linear-gradient(90deg, #2691d9, #1e8cbd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+  background: #f2DEDE;
+  color: #a94442;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+}
+
+div.container div.myform input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  width: 100%;
+  border-bottom: 2px solid #1c1c1e;
+  margin-bottom: 15px;
+  padding: 7px 0;
+  font-size: 14px;
+}
+
+div.container div.myform input.gender {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  width: 4%;
+  border-bottom: 2px solid #1c1c1e;
+  margin-bottom: 15px;
+  padding: 7px 0;
+  font-size: 14px;
+}
+
+div.container div.myform button {
+  width: 100%;
+  color: white;
+  background-color: #2691d9;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+div.container div.image img {
+  width: 150px; /* Adjusted for mobile */
+  margin-top: 20px;
+}
+
+/* Social button styles */
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.social-button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.social-button:hover {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  div.container {
+      padding: 15px;
+      width: 95%;
+      top: 50%;
+  }
+
+  div.container div.myform h2 {
+      font-size: 20px; /* Adjusted font size */
+  }
+
+  div.container div.myform input {
+      font-size: 16px;
+      padding: 10px 0;
+  }
+
+  div.container div.myform button {
+      padding: 12px;
+      font-size: 16px;
+  }
+
+  .social-button {
+      padding: 15px;
+      font-size: 16px;
+  }
+
+  div.container div.image img {
+      width: 120px; /* Adjusted for mobile */
+  }
+}
+
+/* Media query for small mobile screens */
+@media (max-width: 480px) {
+  div.container {
+      top: 50%;
+      padding: 10px;
+  }
+
+  div.container div.myform h2 {
+      font-size: 18px; /* Adjusted font size */
+  }
+
+  div.container div.myform input {
+      font-size: 14px;
+      padding: 8px 0;
+  }
+
+  div.container div.myform button {
+      padding: 15px;
+      font-size: 18px;
+  }
+
+  .social-button {
+      padding: 15px;
+      font-size: 18px;
+  }
+
+  div.container div.image img {
+      width: 100px; /* Adjusted for small mobile */
+  }
+}

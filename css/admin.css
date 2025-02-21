@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+  }
+  
+  body{
+  
+      background: url(../images/homg-img.png) no-repeat center center fixed;
+      background-size: cover; /* This ensures the background image covers the entire screen */
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* This makes sure the body takes the full height of the viewport */
+  }
+
+  .button{
+    color: white;
+    background-color:#2691d9;
+    border: none;
+    height: 100px;
+    outline: none;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 5px 12px;
+    font-weight: 500;
+  }
+  
+    div.container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 50px 50px -50px darkslategray;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+}
+
+  
+  div.container div.myform{
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  
+  /* div.container div.myform h2{
+    color: #2691d9;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  } */
+  
+  /* Add this to your CSS file */
+  
+  div.container div.myform h2 {
+    color: #2691d9;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 24px; /* Increase font size for better visibility */
+    font-weight: 700; /* Make the text bold */
+    text-align: center; /* Center align the text */
+    background: linear-gradient(90deg, #2691d9, #1e8cbd); /* Add a gradient background */
+    -webkit-background-clip: text; /* Clip the background to text */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent to show the gradient */
+    padding: 10px; /* Add padding around the text */
+    border-radius: 5px; /* Rounded corners for the background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  }
+  
+  
+  
+  .error {
+    background: #f2DEDE;
+    color: #a94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+  }
+  div.container div.myform input.gender{
+    width: 30px;
+  }
+  div.container div.myform input{
+    border: none;
+    outline: none;
+    border-radius: 0;
+    width: 100%;
+    border-bottom: 2px solid #1c1c1e;
+    margin-bottom: 25px;
+    padding: 7px 0;
+    font-size: 14px;
+  }
+  
+  div.container div.myform button{
+    color: white;
+    background-color:#2691d9;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 5px 12px;
+    font-weight: 500;
+  }
+  div.container div.image img{
+    width: 300px;
+  }
+  /* Add this to your CSS file */
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .social-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .social-button:hover {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+  }
+  
